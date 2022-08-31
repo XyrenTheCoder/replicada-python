@@ -15,7 +15,7 @@ cwd = os.getcwd() #get current working directory
 count = 0 #counter
 
 while count < 200: #this will loop 200 times
-    name = ''.join(random.choice(string.printable)) #random string generator
+    name = ''.join(random.choices(string.printable)) #random string generator
     time.sleep(1) #cooldown, lower the value to make the process faster, higher the value to make the process slower (prevent lags)
     os.mkdir(f"{cwd}{sep}{name}{count}") #created directory name will be random printable characters
     count += 1 #increases count everytime it creates a directory
