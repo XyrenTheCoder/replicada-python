@@ -11,6 +11,6 @@ for dir in all:
     while True:
         os.mkdir(f"{cwd}{sep}test{count}")
         count += 1
-        if count == 10: break
+        if count == 5: break #5 because i tested this on replit and it cant even take 10
     shutil.copy(f"{cwd}{sep}main.py", dir)
     #time.sleep(0.3)
