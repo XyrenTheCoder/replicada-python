@@ -6,17 +6,18 @@ DO NOT RUN THIS FILE IN ANY IMPORTANT DIRECTORIES
 self-replicating python file by archisha69
 '''
 
-import os, shutil
-import time
+import os, shutil, time, random, string
 
 sep = "\\" if os.name == "nt" else "/"
 cwd = os.getcwd()
+
+name = ''.join(random.choice(string.printable)
 
 count = 0
 
 while count < 10: #change value to whatever amount of directories you want it to create, beware of this could lag your devices
     time.sleep(1) #cooldown, lower the value to make the process faster, higher the value to make the process slower (prevent lags)
-    os.mkdir(f"{cwd}{sep}test{count}") #you may change directory name to make it steathy, current name will be "test0" to "test9"
+    os.mkdir(f"{cwd}{sep}{name}{count}") #created directory name will be random printable characters
     count += 1
     
 if count == 10:
