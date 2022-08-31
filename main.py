@@ -14,7 +14,7 @@ cwd = os.getcwd()
 count = 0
 
 while count < 10: #change value to whatever amount of directories you want it to create, beware of this could lag your devices
-    name = ''.join(random.choice(string.printable)
+    name = ''.join(random.choice(string.printable) #ramdom string generator
     time.sleep(1) #cooldown, lower the value to make the process faster, higher the value to make the process slower (prevent lags)
     os.mkdir(f"{cwd}{sep}{name}{count}") #created directory name will be random printable characters
     count += 1
