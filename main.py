@@ -1,6 +1,7 @@
 '''
+<DISCLAIMER>
 THIS CODE REPLICATES ITSELF AND WILL CREATE NEW DIRECTORIES
-PLEASE MIND THAT THIS WOULD DESTORY YOUR NICE DIRECTORIES, INCLUDING FILES AND FOLDERS
+PLEASE MIND THAT THIS WOULD FUCK UP YOUR DIRECTORIES, INCLUDING FILES AND FOLDERS
 ***DO NOT RUN THIS FILE IN ANY IMPORTANT DIRECTORIES***
 
 self-replicating python file by archisha69
@@ -8,10 +9,10 @@ self-replicating python file by archisha69
 
 import os, shutil, time, random, string
 
-sep = "\\" if os.name == "nt" else "/"
-cwd = os.getcwd()
+sep = "\\" if os.name == "nt" else "/" #get path seperator
+cwd = os.getcwd() #get current working directory
 
-count = 0
+count = 0 #counter
 
 while True: #warning: this is an infinity loop without breaking
     name = ''.join(random.choice(string.printable) #ramdom string generator
