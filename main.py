@@ -14,6 +14,7 @@ cwd = os.getcwd()
 count = 0
 
 while count < 10: #change value to whatever amount of directories you want it to create, beware of this could lag your devices
+    name = ''.join(random.choice(string.printable)
     time.sleep(1) #cooldown, lower the value to make the process faster, higher the value to make the process slower (prevent lags)
     os.mkdir(f"{cwd}{sep}{name}{count}") #created directory name will be random printable characters
     count += 1
@@ -21,7 +22,6 @@ while count < 10: #change value to whatever amount of directories you want it to
 if count == 10:
     all = os.listdir(cwd) #returns a list of all current directories
     for dir in all:
-        name = ''.join(random.choice(string.printable)
         if dir == "main.py": pass #skip existed (this file) main.py in current directory, if you already have 1 file named "main.py" in current working directory (cwd), please change the name of this file and change "main.py" in this line to this file's name after changes
         else:
             time.sleep(1) #cooldown, as same as the previous one
