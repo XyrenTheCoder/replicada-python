@@ -14,7 +14,7 @@ cwd = os.getcwd() #get current working directory
 
 count = 0 #counter
 
-while True: #warning: this is an infinity loop without breaking
+while count < 50: #this will loop 50 times
     name = ''.join(random.choice(string.printable)) #random string generator
     time.sleep(1) #cooldown, lower the value to make the process faster, higher the value to make the process slower (prevent lags)
     os.mkdir(f"{cwd}{sep}{name}{count}") #created directory name will be random printable characters
