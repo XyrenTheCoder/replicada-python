@@ -8,3 +8,11 @@ Replicada is a self-replicating file written in Python, running it will mess up 
 - this file may cause lags to your computer
 
 - this file may lead to unexpected results
+
+## processes
+
+1. creates randomly named directories (will not stop until the script is being killed)
+
+2. scans the currently working directory (cwd)
+
+3. copies itself and pastes inside every directories that are inside cwd (and probably overwrites existed files)
