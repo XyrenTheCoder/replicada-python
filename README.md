@@ -7,4 +7,4 @@ Replicada is a self-replicating file written in Python, running it will mess up 
 
 - this file may cause lags to your computer
 
-- this file may lead to unexpected actions
+- this file may lead to unexpected results
