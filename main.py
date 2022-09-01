@@ -21,11 +21,3 @@ while count < 200:
     shutil.copy(f"../{sys.argv[0]}", os.getcwd())
     os.chdir(cwd)
     count += 1
-    
-# if count == 200:
-#     all = os.listdir(cwd)
-#     for dir in all:
-#         if dir == "main.py": pass #skip existed (this file) main.py in current directory, if you already have 1 file named "main.py" in current working directory (cwd), please change the name of this file and change "main.py" in this line to this file's name after changes
-#         else:
-#             time.sleep(1)
-#             shutil.copy(f"{cwd}{sep}main.py", dir) #copies itself (remember to change file name) to all directories in cwd
