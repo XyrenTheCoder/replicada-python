@@ -13,7 +13,8 @@ cwd = os.getcwd()
 
 count = 0
 
-while count < 200:
+#while count < 200:
+while True:
     name = ''.join(random.choices(string.ascii_letters + string.digits, k=random.randint(2, 32)))
     time.sleep(1)
     os.mkdir(name)
