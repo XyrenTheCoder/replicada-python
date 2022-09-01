@@ -18,6 +18,6 @@ while count < 200:
     time.sleep(1)
     os.mkdir(name)
     os.chdir(name)
-    shutil.copy(f"../{sys.argv[0]}", os.getcwd())
+    shutil.copy(f"../{sys.argv[0]}", cwd)
     os.chdir(cwd)
     count += 1
