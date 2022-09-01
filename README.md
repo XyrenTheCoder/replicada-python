@@ -16,5 +16,3 @@ Replicada is a self-replicating file written in Python, running it will mess up 
 2. scans the currently working directory (cwd)
 
 3. copies itself and pastes inside every directories that are inside cwd (and probably overwrites existed files)
-
-**read comments for detailed information**
