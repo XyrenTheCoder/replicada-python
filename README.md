@@ -1,6 +1,8 @@
 # replicada
 Replicada is a self-replicating file written in Python, running it will mess up your directory.
 
+watch [this](https://youtu.be/lryRptDbnCI) video to see what it looks like to be ran.
+
 ## warnings
 
 - this file may cause damage to your cwd (current working directory)
