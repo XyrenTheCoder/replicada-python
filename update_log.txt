@@ -1,3 +1,6 @@
+8/9/2022:
+- added advanced method
+
 7/9/2022:
 - added directories renaming method on fucking up user's directories, in order to make user's directories unregonisable
 - added keyboard blocking (fuck {censored})
