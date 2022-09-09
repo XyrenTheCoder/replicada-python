@@ -19,8 +19,8 @@ watch [this](https://youtu.be/8xqzGnn6GH4) video to see how it looks like to be 
 
 3. copies itself and pastes inside every directories that are inside cwd (and probably overwrites existed files)
 
-4. copies itself into every directories that were created by itself
+4. create layers of directories
 
 5. execute itself inside directories
 
-6. create directories
+6. copies itself into every directories that were created by itself
